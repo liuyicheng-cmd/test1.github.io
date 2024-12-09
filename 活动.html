@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="精彩瞬间" content="width=device-width, initial-scale=1.0">
+<title>Video Player</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color:  #333;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+	<div class="navbar">
+	    <a href="index.html">主页</a>
+		<a href="历史.html">历史</a>
+	    <a href="球星.html">球星</a>
+	    <a href="活动.html">活动</a>
+	    <a href="球队.html">球队</a>
+	    <a href="精彩瞬间.html">精彩瞬间</a>
+	</div>
+	
+	<img src="img/活动/125484555.webp"alt="活动" style="width:3500px;max-width:1455px;">
+		<h1>扣响盛夏</h1>
+		<!DOCTYPE html>
+		<html lang="en">
+		<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Image Switcher with Text on the Left</title>
+		<style>
+		  .container {
+		    display: flex;
+		    flex-wrap: wrap; /* 允许项目换行 */
+		    align-items: flex-start; /* 项目在交叉轴上的起点对齐 */
+			.navbar {
+			    overflow: hidden;
+			    background-color:  #333;
+			}
+			.navbar a {
+			    float: left;
+			    display: block;
+			    color: white;
+			    text-align: center;
+			    padding: 14px 20px;
+			    text-decoration: none;
+			}
+			.navbar a:hover {
+			    background-color: #ddd;
+			    color: black;
+		  }
+		  .image-label {
+		    cursor: pointer;
+		    margin: 5px; /* 为标签添加外边距 */
+		  }
+		  .image-container {
+		    flex: 1; /* 图片容器占据剩余空间 */
+		    max-width: 700px; /* 图片容器最大宽度 */
+		    margin-left: 200px; /* 图片与文字间距 */
+		    display: none; /* 默认不显示 */
+		  }
+		  .image-container.active {
+		    display: block; /* 显示活动状态的图片容器 */
+		  }
+		  .image-container img {
+		    width: 100%; /* 图片宽度填满容器 */
+		    height: auto; /* 图片高度自适应 */
+		  }
+		</style>
+		</head>
+		<body>
+
+<style>
+  .container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px; /* 为容器添加底部间距 */
+  }
+  .image-label {
+    display: inline-block;
+    padding: 5px 10px; /* 为文字添加内边距 */
+    background-color: #f0f0f0; /* 为文字添加底板颜色 */
+    border-radius: 5px; /* 为文字添加圆角边框 */
+    cursor: pointer; /* 鼠标悬停时显示指针 */
+    transition: background-color 0.3s, color 0.3s; /* 平滑过渡效果 */
+  }
+  .image-label:hover {
+    background-color: #007bff; /* 鼠标悬停时的底板颜色 */
+    color: white; /* 鼠标悬停时的文字颜色 */
+  }
+  .image-container {
+    display: none; /* 默认隐藏所有图片容器 */
+    margin-top: 10px; /* 为图片添加顶部间距 */
+  }
+  .image-container.active {
+    display: block; /* 仅显示带有 active 类的图片容器 */
+  }
+  .image-container img {
+    width: 100%; /* 使图片宽度适应容器宽度 */
+    height: auto;
+    border-radius: 10px; /* 圆角边框 */
+  }
+</style>
+
+<div class="container">
+  <label class="image-label" for="img1">路易斯-斯科拉</label>
+  <div class="image-container active" id="img1">
+    <img src="img/路易斯 斯科拉.webp" alt="Image 1">
+  </div>
+</div>
+
+<div class="container">
+  <label class="image-label" for="img2">詹姆斯-哈登</label>
+  <div class="image-container" id="img2">
+    <img src="img/詹姆斯 哈登.webp" alt="Image 2">
+  </div>
+</div>
+
+<div class="container">
+  <label class="image-label" for="img3">科比-布莱恩特</label>
+  <div class="image-container" id="img3">
+    <img src="img/kou-Kobe.webp"alt="Image 3">
+  </div>
+</div>
+
+<div class="container">
+  <label class="image-label" for="img4">迈克-康利</label>
+  <div class="image-container" id="img4">
+    <img src="img/kou-Mike.webp" alt="Image 4">
+  </div>
+</div>
+
+<div class="container">
+  <label class="image-label" for="img5">洛佩兹兄弟</label>
+  <div class="image-container" id="img5">
+    <img src="img/kou-Robin.webp" alt="Image 5">
+  </div>
+</div>
+
+<div class="container">
+  <label class="image-label" for="img6">哈里森-巴恩斯</label>
+  <div class="image-container" id="img6">
+    <img src="img/kou-Harrison.webp" alt="Image 6">
+  </div>
+</div>
+<!-- 继续添加更多的 container 来展示更多的图片和标签 -->
+
+<script>
+  document.querySelectorAll('.image-label').forEach(function(label) {
+    label.addEventListener('click', function() {
+      // 移除所有图片容器的 active 类
+      document.querySelectorAll('.image-container').forEach(function(container) {
+        container.classList.remove('active');
+      });
+      // 为点击的标签对应的图片容器添加 active 类
+      var imgId = this.getAttribute('for');
+      document.getElementById(imgId).classList.add('active');
+    });
+  });
+</script>
+
+<h1>扣篮大赛</h1>
+<p>在体育迷们的眼中，有剧情、有转折的比赛才是真正的满分赛事。2023年NBA全明星扣篮大赛正是这样一场经典之战，伴随着惊人的表演和意想不到的故事情节，深深打动了每一位观众的心。本文将带领大家回顾这一场扣人心弦的比赛，分析关键表现和战术，并展望未来的扣篮大赛趋势。</p>
+<h2>一、引言：扣篮大赛的重要性</h2>
+<p>作为全明星周末的一大看点，扣篮大赛一直以来都是篮球迷最期待的环节之一。这不仅仅是一场展示球员体能和技巧的比赛，更是一场视觉与艺术的盛宴。2023年的扣篮大赛将这一特点发挥得淋漓尽致，每一位选手都在赛场上全力展现自己的创意和才华，留下了一幕幕经典的瞬间。</p>
+<h2>二、比赛概述：闪耀全场的明星们</h2>
+<p>今年的扣篮大赛聚集了几位极具实力和人气的球员：贾·莫兰特、奥比·托平、扎克·拉文以及首次参赛的新星贾伦·格林。他们的每一记扣篮都饱含着独特的创意和精妙的技术，让观众们目不暇接。在比赛过程中，尤其值得一提的是几次震撼全场的扣篮表演。</p>
+<img src="img/0542-kquziii6586739.jpg" alt="莫兰特"style="width:600px;max-width:755px;">
+<p>贾·莫兰特以其惊人的弹跳力和出色的身体控制力赢得了满堂喝彩。他在首轮比赛中的一次胯下换手暴扣，几乎完美无瑕，从起跳、滞空到最终完成动作，都展示了顶级球员的风采。而奥比·托平则凭借他的创意扣篮，展现了他与众不同的扣篮风格，他模仿了经典的“风车扣篮”，并在空中完成了一次360度转身。</p>
+<img src="img/R-C.jpg" alt="拉文"style="width:700px;max-width:955px;">
+<h2>三、数据分析：再现经典瞬间</h2>
+<p>让我们借助详细的数据回顾一下这场扣篮大赛的精彩瞬间。贾·莫兰特以98分的总分成绩领先群雄，他的两次扣篮分别获得了满分50分和48分的高分。奥比·托平紧随其后，总分96分，其中一记扣篮得到47分，另一记获得49分。扎克·拉文和贾伦·格林则以94分和90分的成绩位居第三和第四。</p>
+<p>这些数据不仅反映了选手们出色的表现，更展现了扣篮大赛评分的严格和公正。每一次扣篮，裁判们都会从难度、创意、完成度等多个方面进行评分，因此要想在这样高水平的赛事中脱颖而出，选手们必须表现出色。</p>
+<h2>四、赛后评论：专家和球迷的声音</h2>
+<p>赛后，篮球专家和球迷们对比赛进行了热烈的讨论。很多人认为，本次扣篮大赛是近年来最精彩的一次，选手们不仅展现了高超的技巧，更通过比赛讲述了一个个精彩的故事。专家们纷纷表示，这样的比赛形式更具观赏性，也将扣篮大赛的水准提升到了新的高度。</p>
+<p>社交媒体上，关于比赛的讨论热度居高不下。许多球迷在推特和Instagram上分享了自己最喜欢的扣篮瞬间，并表达了对选手们的喜爱和敬佩。特别是贾·莫兰特的表现，更是赢得了无数粉丝的欢呼和支持。</p>
+
+
+
+
+
+<h4></h4>
+<h4></h4>
+<h4></h4>
+<h4></h4>
+<h4></h4>
+<h4></h4>
+<h4></h4>
+
+
+<footer>
+    <p> 团队成员  刘益成 杨大功 王绅豪</p>
+</footer>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA网页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            width: 50px;
+            height: 50px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+        #back-to-top:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <!-- Navigation bar content -->
+</div>
+
+<div class="container">
+    <!-- Page content -->
+</div>
+
+<!-- Back to top button -->
+<div id="back-to-top">
+    &#x2191; <!-- Up arrow Unicode character -->
+</div>
+
+<script>
+    // Get the back to top button
+    var backToTopButton = document.getElementById("back-to-top");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    };
+
+    // When the back to top button is clicked, scroll to the top of the page
+    backToTopButton.onclick = function() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    };
+</script>
+
+</body>
+</html>
+
+
+</body>
+		</html>
